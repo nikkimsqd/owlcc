@@ -103,7 +103,7 @@ foreach ($activities as $record) {
             // -----------------------------------------------------------------
             function goAvailable() {
                 logger("goAvailable(): update worker's activity to: Idle.");
-                worker.update("ActivitySid", "<?= $activity['Idle'] ?>", function (error, worker) {
+                worker.update("ActivitySid", "<?= $activity['Available'] ?>", function (error, worker) {
                     if (error) {
                         console.log(error.code);
                         console.log(error.message);
