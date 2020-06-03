@@ -85,7 +85,7 @@ foreach ($activities as $record) {
                 worker.update("ActivitySid", "<?= $activity['WrapUp'] ?>", function (error, worker) {
                     logger("Worker: " + worker.friendlyName + ", has ended the call.");
                     logger("Device: disconnect.");
-                    Twilio.Device.disconnectAll();
+                    // Twilio.Device.disconnectAll();
                     if (error) {
                         console.log(error.code);
                         console.log(error.message);
