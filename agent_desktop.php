@@ -108,7 +108,8 @@ foreach ($activities as $record) {
                         console.log(error.code);
                         console.log(error.message);
                     }
-                    if(ReservationObject.hasOwnProperty("task")){
+                    if(ReservationObject != null){
+                        console.log(ReservationObject);
                         ReservationObject.task.complete(); // If the status was wrapping, now it will be completed.
                     }
                 });
