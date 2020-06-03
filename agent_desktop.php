@@ -95,6 +95,7 @@ foreach ($activities as $record) {
                     logger("---------");
                 });
                 logger("---------");
+                ReservationObject = null;
             }
         </script>
         <script type="text/javascript">
@@ -109,6 +110,7 @@ foreach ($activities as $record) {
                         console.log(error.message);
                     }
                     if(ReservationObject != null){
+                        // if(ReservationObject)
                         console.log(ReservationObject);
                         ReservationObject.task.complete(); // If the status was wrapping, now it will be completed.
                     }
